@@ -1,0 +1,72 @@
+.btn-vehicle-active{
+    @include button($pd-0 + 1, $pd-5, $cl-blue-3, $cl-blue-3, $cl-white-1, $fs-0, $cl-white-1, $cl-blue-3);
+}
+.btn-vehicle{
+    @include button($pd-0 + 1, $pd-5, $cl-blue-3,$cl-white-1,$cl-blue-3, $fs-0, $cl-blue-3, $cl-white-1);
+}
+.intro{
+    .intro__item--1{
+        button{
+            @include button($pd-0 + 1, $pd-2, $cl-blue-3, $cl-blue-3, $cl-white-1, $fs-0, transparent, $cl-blue-6);
+        }    
+    }
+    .intro__item--2{
+        button{
+            margin-left: $mg-1;
+            @include button($pd-0 + 1, $pd-2, $cl-white-1, transparent, $cl-white-1, $fs-0, $cl-white-1, $cl-blue-1);
+        }
+    }
+}
+.carousel__button{
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    z-index: 2;
+    transform: translateX(-50%);
+    button{
+        @include button($pd-0 + 1, $pd-2, $cl-orange-1, $cl-orange-1, $cl-white-1, $fs-0, $cl-white-1, $cl-orange-1);
+    }
+}
+.our-vehicle{
+    .our-vehicle__button{
+        button:nth-of-type(1){
+            @include button($pd-0 + 1, $pd-5, $cl-orange-1, $cl-orange-1, $cl-white-1, $fs-0, $cl-white-1, $cl-orange-1);
+            margin-right: 10px;
+            
+            @media screen  and (max-width: $mdScreen){
+                padding: $mg-0 $mg-2;
+            }
+        }
+        button:nth-of-type(2){
+            @include button($pd-0 + 1, $pd-5, $cl-white-1, transparent, $cl-white-1, $fs-0, $cl-white-1, $cl-blue-1);
+            @media screen  and (max-width: $mdScreen){
+                padding: $mg-0 $mg-2;
+            }
+        }
+    }
+}
+.our-vehicle__items{
+    button{
+        @include button($pd-0 + 1, $pd-2, $cl-blue-3, $cl-blue-3, $cl-white-1, $fs-0, transparent, $cl-blue-6);
+    }
+}
+.our-vehicle__img{
+    button{
+        @include button($pd-0 + 1, $pd-2, $cl-orange-1, $cl-orange-1, $cl-white-1, $fs-0, $cl-white-1, $cl-orange-1);
+            margin-right: 10px;
+    }
+}
+.discover-honda__content__button{
+    button{
+        @include button($pd-0 + 1, $pd-5, $cl-orange-1, $cl-orange-1, $cl-white-1, $fs-0, $cl-white-1, $cl-orange-1);
+            margin-right: 10px;
+    }
+}
+.list__bottom{
+    button{
+        @include button($pd-0 + 1, $pd-5, $cl-blue-1, transparent, $cl-blue-1, $fs-0, $cl-blue-1, $cl-white-1);
+        i{
+            font-size: $fs-0;
+        }
+    }
+}

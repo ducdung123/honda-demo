@@ -1,0 +1,249 @@
+@media screen  and (max-width: $mdScreen) {
+    header {
+        #nav-header {
+            .nav-header__right {
+                position: absolute;
+                top: 100%;
+                right: 0;
+                flex-direction: column;
+                background-color: $cl-blue-1;
+                transition: .3s;
+                transform: translateX(100%);
+                width: 50%;
+                align-items: flex-start;
+                a{
+                    padding: 10px 25px;
+                    background: none;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                   
+                    i{
+                        width: 20px;
+                        height: 20px;
+                        border: 1px solid white;
+                        border-radius: 50%;
+                        line-height: 18px;
+                        text-align: center;
+                        transition: .1s;
+                    }
+                    &:hover{
+                        background-color: white;
+                        i{
+                            border-color: $cl-blue-3;
+                        }
+                    }
+
+                }
+                .header__a--icon{
+                    display: none;
+                }
+                #nav-header__7{
+                    i{
+                        display: inline-block;
+                        border: none;
+                    }
+                    .input_search_sm{
+                        background-color: transparent;
+                        outline: none;
+                        border: none;
+                        border-bottom: 1px solid $cl-blue-1;
+                        color: white;
+                        padding-left: 5px;
+                        width: 100%;
+                    }
+                    &:hover{
+                        .input_search_sm{
+                            color: $cl-blue-1;
+                        }
+                    }
+                }
+            }
+            .nav-header__left{
+                a{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 10px;
+                    
+                    align-items: center;
+                    i{
+                        font-size: $fs-0 - 0.1;
+                    }
+                }
+            }
+        }
+        #header_vehicle{
+            .header_vehicle__content{
+                nav{
+                    flex-wrap: wrap;
+                    a{
+                        border:none
+                    }
+                    
+                }
+                .vehicle__content .vehicle__item .vehicle__item__content .row > div{
+                    padding: 0;
+                    text-align: center;
+                    h2{
+                        font-size: $fs-1;
+                    }
+                    p{
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+            
+        }
+    }
+    .intro{
+        height: 900px;
+        .intro__content{
+            .row{
+                padding: 0 $pd-5;
+            }
+            .intro__item--1{
+                h3{
+                    margin-top: 150px;
+                }
+                padding: 0;
+                margin-bottom: $mg-2;
+            }
+            .intro__item--2{
+                h2{
+                    margin-top: 90px;
+                }
+                padding: 0;
+            }
+        }
+    }
+    .our-vehicle{
+        h1 {
+            font-size: $fs-3;
+            margin-bottom: $mg-7 + 20;
+            margin-top: $mg-3;
+        }
+        .our-vehicle__item{
+            position: absolute;
+            top: 50%;
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60%;
+            align-items: center;
+            img{
+                transform: translateX(0);
+            }
+            .our-vehicle__cost{
+                width: 100%;
+                margin: 0;
+                margin-bottom: $mg-2;
+                div{
+                   text-align: center;
+                }
+                h1{
+                    margin-top: 0;
+                }
+            }
+        }
+        .our-vehicle__footer {
+            position: absolute;
+            top: 88%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+        }
+        .our-vehicle__items{
+            padding: $pd-7 $pd-5;
+        }
+        .our-vehicle__img{
+            padding: 0 $pd-5;
+        }
+    }
+    .discover-honda{
+        padding: 0 $pd-5;
+        h1{
+            font-size: $fs-3;
+        }
+    }
+    .list{
+        padding: $pd-5;
+        .list__content{
+            flex-direction: column;
+            .list__item{
+                overflow: hidden;
+                border-bottom: 1px solid white;
+                .list__item__title--md{
+                    justify-content: space-between;
+                    align-items: center;
+                    cursor: pointer;
+                    z-index: 2;
+                    padding: $pd-1 0;
+                    
+                    i{
+                        width: 30px;
+                        height: 30px;
+                        color: $cl-blue-3;
+                        border: 1px solid $cl-blue-3;
+                        line-height: 30px;
+                        text-align: center;
+                        font-size: $fs-0;
+                        border-radius: 50%;
+                        
+                    }
+                    h3{
+                        margin: 0;
+                        font-size: $fs-0 + .1;
+                    }
+                }
+                ol{
+                    
+                    height: 0px;
+                    transition: all .5s;
+                    margin-bottom: 0;
+                    
+                }
+                .ol-height-md{
+                    height: 300px;
+                }
+            }
+        }
+        .list__bottom{
+            flex-direction: column;
+            div:nth-of-type(2){
+                text-align: left;
+                margin-top: $mg-3;
+            }
+        }
+    }
+    footer{
+        padding:$pd-2 $pd-5;
+        .footer__top{
+            flex-direction: column;
+            >p{
+                width: 100%;
+                text-align: center;
+            }
+            >div{
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+}
+@media screen  and (min-width: $smScreen) and(max-width: $mdScreen){
+    .discover-honda{
+        .discover-honda__content{
+            .row{
+                .discover-honda__content__item{
+                    >div{
+                        top: 40% ;
+                    }
+                }
+            }
+        }
+        
+    }
+}

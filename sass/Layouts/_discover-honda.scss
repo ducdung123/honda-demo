@@ -1,0 +1,167 @@
+.discover-honda {
+    background-color: $cl-white-2;
+    text-align: center;
+    padding: 0 $pd-7 + 20;
+    // margin-top: $mg-3;
+    h1 {
+        font-size: $fs-4;
+        color: $cl-black-1;
+        font-weight: 300;
+    }
+    > p {
+        color: $cl-blue-5;
+        font-weight: 300;
+        font-size: $fs-0;
+    }
+    .discover-honda__content {
+        padding: $mg-2 0;
+
+        .row {
+            margin: 0;
+            .discover-honda__content__item {
+                position: relative;
+                margin-bottom: $mg-5;
+                box-shadow: 0 5px 10px 0 rgba(8, 29, 42, 0.08);
+                height: 450px;
+                perspective: 1000px;
+                overflow: hidden;
+                > div {
+                    position: absolute;
+                    top: 50%;
+                    h3 {
+                        color: $cl-black-1;
+                        font-weight: bold;
+                        font-size: $fs-1;
+                        margin-bottom: $mg-3;
+                    }
+                    p {
+                        // color: $cl-blue-5;
+                        font-weight: 300;
+                        font-size: $fs-0;
+                        padding: 0 $pd-3;
+                        transform-style: preserve-3d;
+                    }
+                    a {
+                        display: block;
+                        margin-top: $mg-5;
+                        color: $cl-blue-3;
+                        font-size: $fs-0;
+                        font-weight: bold;
+                        text-decoration: none;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                .discover-honda__content__item__img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    transform-origin: top;
+                    // transform-style: preserve-3d;
+                    transition: 0.5s;
+                    transition-delay: 0.2s;
+                    img {
+                        position: absolute;
+                        top: 0;
+                        left: 0px;
+                        width: 100%;
+                        height: 450px;
+                        object-fit: cover;
+                        object-position: 75% 100%;
+                    }
+                }
+                &:hover {
+                    .discover-honda__content__item__img {
+                        transform: rotateX(-90deg);
+                        opacity: 0;
+                        transition-delay: 0s;
+                    }
+                    .discover-honda__content__item__title {
+                        transform: rotateX(0);
+                        opacity: 1;
+                        transition-delay: 0.2s;
+                    }
+                }
+                .discover-honda__content__item__title {
+                    position: absolute;
+                    background: rgba(0, 0, 0, 1);
+                    top: 0;
+                    left: 0px;
+                    width: 100%;
+                    height: 100%;
+                    transform-origin: bottom;
+                    // transform-style: preserve-3d;
+                    transition: 0.5s;
+                    transform: rotateX(90deg);
+                    opacity: 0;
+                    transition-delay: 0s;
+                    .discover-honda__title__icon {
+                        position: absolute;
+                        top: 5%;
+                        right: 5%;
+                        i {
+                            color: white;
+                            font-size: $fs-1;
+                        }
+                    }
+                    .discover-honda__content__item__title__ct {
+                        position: absolute;
+                        top: 30%;
+                        left: 5%;
+                        text-align: left;
+                        .discover-honda__title__ava {
+                            display: flex;
+                            text-align: center;
+                            div:nth-of-type(1) {
+                                box-shadow: 0px 0px 10px 5px white inset;
+                                img {
+                                    opacity: 0.8;
+                                }
+                            }
+                            a {
+                                margin: 0;
+                                margin-left: 10px;
+                                &:nth-of-type(1) {
+                                    transform: translateX(-5px);
+                                }
+                                &:nth-of-type(2) {
+                                    font-weight: 400;
+                                }
+                            }
+                        }
+                        > p {
+                            padding: 0;
+                            color: white;
+                            margin: $mg-2 0;
+                            a {
+                                display: inline-block;
+                                margin: 0;
+                                font-weight: 400;
+                            }
+                        }
+                        > a {
+                            margin: 0;
+                            font-weight: 400;
+                        }
+                        > div {
+                            display: flex;
+                            color: white;
+                            margin-top: $mg-3;
+                            p {
+                                padding: 0;
+                                margin-right: $mg-2;
+                                i {
+                                    font-size: $fs-1 - 0.4;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}

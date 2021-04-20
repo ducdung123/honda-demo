@@ -1,0 +1,24 @@
+@mixin button($pd-x, $pd-y, $bg-bd, $bg-cl, $color, $fs, $bg-cl-hover, $color-hover) {
+    padding: $pd-x $pd-y;
+    border: 2px solid $bg-bd;
+    border-radius: 40px;
+    background-color: $bg-cl;
+    color: $color;
+    font-weight: bold;
+    font-size: $fs;
+    box-shadow: none;
+    &:hover {
+        background-color: $bg-cl-hover;
+        color: $color-hover;
+    }
+}
+@mixin icon {
+    width: 30px;
+    height: 30px;
+    color: $cl-white-1;
+    background-color: $cl-blue-6;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    font-size: $fs-0;
+}

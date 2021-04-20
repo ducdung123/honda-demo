@@ -1,0 +1,95 @@
+.carousel--config {
+    height: 460px;
+    z-index: 2;
+    margin-top: $mg-7;
+    position: relative;
+    .carousel__content {
+        height: 100%;
+    }
+    .owl-carousel .owl-nav button {
+        background-color: $cl-white-1;
+        color: $cl-blue-7;
+        position: absolute;
+        top: 50%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // padding: 20px !important;
+        width: 50px;
+        height: 100px;
+        transform: translateY(-50%);
+
+        span {
+            // padding: 20px !important;
+            font-size: 100px;
+            //display: block;
+            height: 100%;
+            position: absolute;
+            top: -38%;
+        }
+        &.owl-next {
+            right: 0;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+        &.owl-prev {
+            left: 0;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+    }
+    .owl-carousel .owl-dots {
+        position: absolute;
+        bottom: -25px;
+        left: 50%;
+        transform: translateX(-50%);
+        button.owl-dot {
+            // color: black;
+            background-color: $cl-blue-8;
+            margin-right: 8px;
+            border-radius: 50%;
+            width: 13px;
+            height: 13px;
+            &.active{
+                background-color: $cl-blue-9;
+            }
+        }
+    }
+}
+.our-vehicle{
+    position: relative;
+    .owl-carousel .owl-nav button {
+        background-color: $cl-blue-4;
+        color: $cl-gray-2;
+        position: absolute;
+        top: 50%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // padding: 20px !important;
+        width: 40px;
+        height: 80px;
+        transform: translateY(-50%);
+
+        span {
+            // padding: 20px !important;
+            font-size: 80px;
+            //display: block;
+            height: 100%;
+            position: absolute;
+            top: -38%;
+        }
+        &.owl-next {
+            right: 0;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+        &.owl-prev {
+            left: 0;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+    }
+}

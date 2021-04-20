@@ -1,0 +1,45 @@
+footer{
+    background-color: $cl-blue-1;
+    padding:$pd-2 $pd-7 + 20;
+    color: $cl-white-1;
+    .footer__top{
+        display: flex;
+        justify-content: space-between;
+        
+        >p{
+            width: 40%;
+            font-size: $fs-0;
+            a{
+                font-size: $fs-0;
+                color: $cl-white-1;
+                font-style: italic;
+            }
+        }
+        >div{
+            width: 65%;
+            text-align: right;
+            a{
+                font-size: $fs-0;
+                color: $cl-white-1;
+                text-decoration: none;
+                border-right: 1px solid $cl-white-1;
+                padding: 0 $pd-1;
+                &:hover{
+                    text-decoration: underline;
+                }
+                &:nth-of-type(4){
+                    border: none;
+                }
+            }
+        }
+    }
+    .footer__bottom{
+        margin-top: $mg-5;
+        display: flex;
+        justify-content: space-around;
+        img{
+            height: 40px;
+            // max-width: 50%;
+        }
+    }
+}

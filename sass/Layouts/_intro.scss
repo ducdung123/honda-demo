@@ -1,0 +1,70 @@
+.intro {
+    background-color: $cl-white-2;
+    position: relative;
+    .intro__bg--top {
+        height: 280px;
+        background-color: $cl-black-1;
+    }
+    .intro__bg--bottom {
+        height: 200px;
+        background-color: $cl-white-2;
+    }
+    .intro__content {
+        position: absolute;
+        top: 20%;
+
+        .row {
+            margin: 0;
+            padding: 0 $mg-7;
+        }
+        .intro__item--1 {
+            background: url("../img/our-vehicle-intro-1.jpg");
+            height: 350px;
+            padding: 0;
+            padding-right: $pd-2;
+            color: $cl-white-1;
+            text-align: center;
+            background-clip: content-box;
+            background-position: center;
+            background-size: cover;
+            h3 {
+                margin-top: 150px;
+                font-size: $fs-1;
+                font-weight: bold;
+            }
+            p{
+                font-size: $fs-0;
+                line-height: 20px;
+                margin:$mg-3 0;
+            }
+        }
+        .intro__item--2 {
+            background: url("../img/our-vehicles-intro-2.jpg");
+            height: 350px;
+            padding: 0;
+            padding-left: $pd-2;
+            background-clip: content-box;
+            background-position: center;
+            background-size: cover;
+            color: $cl-white-1;
+            h2{
+                margin-top: 120px;
+                font-size: $fs-1;
+                padding: $pd-0 + 1 $pd-2;
+                background-color: $cl-blue-4;
+                font-weight: bold;
+                margin-left: $mg-1;
+                display: inline-block;
+            }
+            h3{
+                margin-top: $mg-2;
+                width: 40%;
+                margin-left: $mg-1;
+                font-size: $fs-1;
+                font-weight: bold;
+                margin-bottom: $mg-3;
+            }
+            // margin: 0 $mg-2 0 $mg-7;
+        }
+    }
+}

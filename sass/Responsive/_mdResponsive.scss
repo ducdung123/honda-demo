@@ -1,0 +1,49 @@
+@media screen and (min-width: $mdScreen) and (max-width: $lgScreen){
+    header{
+        #nav-header{
+            // .navbar-brand--config{
+            //     height: 50px;
+            // }
+            a{
+                padding: 20px 10px;
+                font-size: 1.2rem;
+            }
+        }
+        #header_vehicle{
+            .header_vehicle__content nav{
+                flex-wrap: wrap;
+                a{
+                    border:none
+                }
+            }
+        }
+    }
+    .our-vehicle{
+        .our-vehicle__item{
+            padding: $mg-5;
+            width: 50%;
+            > p {
+                font-size: 1.2rem;
+            }
+            .our-vehicle__cost{
+                justify-content: start;
+                div:first-of-type{
+                    margin-right: 20px;
+                }
+            }
+            
+        }
+        .our-vehicle__nav{
+            width: 98%;
+        }
+        .our-vehicle__items{
+            .our-vehicle__items__item{
+                > div{
+                    top: 30% !important;
+                }
+            }
+        }
+    }
+    
+    
+}

@@ -1,0 +1,73 @@
+@media screen and (min-width: $lgScreen) and (max-width: $Screen1){
+    .vehicle__item__button{
+        flex-direction: column;
+        align-items: center;
+        button{
+            padding: 6px 10px;
+            margin-bottom: $mg-0;
+            width: 70%;
+        }
+    }
+    .discover-honda{
+        .discover-honda__content{
+            .row{
+                .discover-honda__content__item{
+                    >div{
+                        top: 40% ;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+@media screen and (max-width: $lgScreen){
+    .carousel--config{
+        height: 380px;
+        margin-top: $mg-7 - 5;
+    }
+    .intro{
+        .intro__content{
+            .intro__item--1{
+                h3{
+                    margin-top: 100px;
+                }
+                p{
+                    padding: 0 $pd-1;
+                }
+            }
+            .intro__item--2{
+                h2{
+                    margin-top: 70px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: $Screen1){
+    .our-vehicle{
+        .our-vehicle__nav{
+            width: 90%;
+        }
+        .our-vehicle__footer{
+            border: none;
+            margin-top: $mg-3;
+            justify-content: center;
+            img{
+                display: none;
+            }
+        }
+        .our-vehicle__item{
+            .our-vehicle__cost{
+                h1{
+                    font-size: $fs-2;
+                    margin-bottom: $mg-0;
+                }
+                p{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+    
+}
